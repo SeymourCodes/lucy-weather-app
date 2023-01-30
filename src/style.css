@@ -2,14 +2,6 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.weather-app {
-  max-width: 600px;
-  margin: 0 auto;
-  margin: 30px auto;
-  padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 8px;
-}
 
 h1 {
   font-size: 23px;
@@ -32,4 +24,16 @@ li {
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 8px;
+}
+.weather-app-wrapper {
+  margin: 0 auto;
+  max-width: 600px;
 }
