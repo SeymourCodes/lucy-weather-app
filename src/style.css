@@ -46,7 +46,7 @@ li {
   height: 64px;
   width: 64px;
 }
-.temperature {
+.d-flex-weather-temperature strong {
   color: rgb (33, 33, 33);
   font-size: 60px;
   font-weight: 400;
