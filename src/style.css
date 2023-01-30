@@ -53,7 +53,7 @@ li {
   line-height: 1;
 }
 
-#units {
+.units {
   position: relative;
   font-size: 16px;
   top: -32px;
