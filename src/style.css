@@ -46,8 +46,8 @@ li {
   height: 64px;
   width: 64px;
 }
-strong {
+#temperature {
   color: rgb (33, 33, 33);
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 400;
 }
