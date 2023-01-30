@@ -34,6 +34,7 @@ li {
   border-radius: 8px;
 }
 .weather-app-wrapper {
-  margin: 0 auto;
+  margin: 30px auto;
   max-width: 600px;
+  background-color: green;
 }
