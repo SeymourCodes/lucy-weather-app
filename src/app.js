@@ -1,5 +1,6 @@
 function displayTemperature(response) {
   console.log(response.data.temperature.current);
+  console.log(response.data.condition.description);
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temperature");
   let descriptionElement = document.querySelector("#description");
