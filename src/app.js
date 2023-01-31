@@ -6,7 +6,7 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let descriptionElement = document.querySelector("#description");
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
-  cityElement.innerHTML = response.data.query.city;
+  cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = description;
 }
 let apiKey = "o81b0274593fa059b1746c53d9te3d9d";
