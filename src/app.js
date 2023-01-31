@@ -5,9 +5,11 @@ function displayTemperature(response) {
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temperature");
   let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = description;
+  humidityElement.innerHTML = response.data.condition.humidity;
 }
 let apiKey = "o81b0274593fa059b1746c53d9te3d9d";
 let apiURL = `https://api.shecodes.io/weather/v1/current?query=Sydney&key=${apiKey}&units=metric`;
