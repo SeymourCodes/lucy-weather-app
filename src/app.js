@@ -47,6 +47,11 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast (coordinates){
+console.log (coordinates);
+
+}
+
 function displayTemperature(response) {
   console.log(response.data.temperature.current);
   let description = response.data.condition.description;
@@ -69,6 +74,9 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.time * 1000);
   iconElement.setAttribute("src", response.data.condition.icon_url);
   iconElement.setAttribute("alt", response.data.condition.icon);
+
+  function getForecast (response.data.coord);
+
 }
 
 function search(city) {
