@@ -21,6 +21,23 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours} :${minutes}`;
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = `<div class="row">
+                            <div class="col-2">
+                                <div class="weather-forecast-date"></div>
+                                Fri <img
+                                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                                    alt="" width="42px" />
+                                <div class="weather-forecast-temperature"></div>
+                                <span class="weather-forecast-temperature-max">18°</span>
+                                <span class="weather-forecast-temperature-min">12°</span>
+                            </div>
+                        </div>
+                    </div>`;
+}
+
 function displayTemperature(response) {
   console.log(response.data.temperature.current);
   let description = response.data.condition.description;
@@ -84,3 +101,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Bath");
+displayForecast();
