@@ -24,7 +24,6 @@ function formatDate(timestamp) {
 
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-
   let forecastHTML = `<div class="row">`;
   let days = ["Thu", "Fri", "Sat", "Sun"];
   days.forEach(function (day) {
@@ -108,5 +107,4 @@ function displayForecast() {
   celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
   search("Bath");
-  displayForecast();
 }
