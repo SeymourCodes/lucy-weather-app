@@ -49,8 +49,10 @@ function displayForecast() {
 
 function getForecast(coordinates) {
   console.log(coordinates);
-  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let lon = response.data.coordinates.longitude;
+  let lat = response.data.coordinates.latitude;
+  let apiKey = "o81b0274593fa059b1746c53d9te3d9d";
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?lon=${lon}&lat=${lat}&key=${apiKey}&units=metric"`;
   axios.get(apiUrl).then(displayForecast);
 }
 
