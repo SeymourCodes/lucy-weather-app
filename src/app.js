@@ -49,9 +49,10 @@ function search(city) {
 }
 function handleSubmit(event) {
   event.preventDefault();
-  let cityInput = document.querySelector("#city-input");
+  let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
+search("Bath");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
