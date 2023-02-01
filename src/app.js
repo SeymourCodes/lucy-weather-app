@@ -52,7 +52,6 @@ function handleSubmit(event) {
   let cityInput = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
-search("Bath");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
