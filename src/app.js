@@ -33,7 +33,7 @@ function displayForecast(response) {
       forecastHTML +
       `
                             <div class="col-2">
-                                <div class="weather-forecast-date">${daily.time}</div>
+                                <div class="weather-forecast-date">${daily.dt}</div>
                                 Fri <img
                                     src=${daily.icon_url.icon}
                                     alt="" width="42px" />
