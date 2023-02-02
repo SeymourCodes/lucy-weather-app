@@ -28,21 +28,31 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
 
-  forecast.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
                             <div class="col-2">
-                                <div class="weather-forecast-date">${forecastDay.dt}</div>
+                                <div class="weather-forecast-date">${
+                                  forecastDay.dt
+                                }</div>
                                 Fri <img
-                                    src=${forecastDay.daily.icon_url.icon}
+                                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
+                                      forecastDay.condition.icon
+                                    }.png"
                                     alt="" width="42px" />
                                 <div class="weather-forecast-temperature">
-                                <span class="weather-forecast-temperature-max">${forecastDay.temperature.day.maximum}°</span>
-                                <span class="weather-forecast-temperature-min">${forecastDay.temperature.day.minimum}°</span>
+                                <span class="weather-forecast-temperature-max">${Math.round(
+                                  forecastDay.temperature.day.maximum
+                                )}°</span>
+                                <span class="weather-forecast-temperature-min">${Math.round(
+                                  forecastDay.temperature.day.minimum
+                                )}°</span>
                             </div>
                 
                         </div>`;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
